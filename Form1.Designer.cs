@@ -51,7 +51,7 @@ namespace projetSicilyLines
             this.lb.FormattingEnabled = true;
             this.lb.ItemHeight = 20;
             this.lb.Location = new System.Drawing.Point(231, 93);
-            this.lb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lb.Margin = new System.Windows.Forms.Padding(4);
             this.lb.Name = "lb";
             this.lb.Size = new System.Drawing.Size(499, 444);
             this.lb.TabIndex = 0;
@@ -94,7 +94,7 @@ namespace projetSicilyLines
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(231, 598);
+            this.btnInsert.Location = new System.Drawing.Point(231, 561);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(139, 36);
             this.btnInsert.TabIndex = 4;
@@ -104,7 +104,7 @@ namespace projetSicilyLines
             // 
             // btnModif
             // 
-            this.btnModif.Location = new System.Drawing.Point(417, 598);
+            this.btnModif.Location = new System.Drawing.Point(423, 561);
             this.btnModif.Name = "btnModif";
             this.btnModif.Size = new System.Drawing.Size(131, 36);
             this.btnModif.TabIndex = 5;
@@ -114,7 +114,7 @@ namespace projetSicilyLines
             // 
             // btnSup
             // 
-            this.btnSup.Location = new System.Drawing.Point(591, 597);
+            this.btnSup.Location = new System.Drawing.Point(591, 560);
             this.btnSup.Name = "btnSup";
             this.btnSup.Size = new System.Drawing.Size(139, 37);
             this.btnSup.TabIndex = 6;
@@ -161,7 +161,6 @@ namespace projetSicilyLines
             // ofd
             // 
             this.ofd.FileName = "openFileDialog1";
-            this.ofd.Filter = "|*txt";
             this.ofd.Title = "ouvrir un fichier";
             // 
             // Form1
@@ -183,7 +182,7 @@ namespace projetSicilyLines
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lb);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Application";
             this.Load += new System.EventHandler(this.Form1_Load);
