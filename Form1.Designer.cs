@@ -58,13 +58,15 @@ namespace projetSicilyLines
             // 
             // btnAccueil
             // 
+            this.btnAccueil.BackColor = System.Drawing.Color.Transparent;
             this.btnAccueil.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccueil.Location = new System.Drawing.Point(9, 135);
+            this.btnAccueil.ForeColor = System.Drawing.Color.Black;
+            this.btnAccueil.Location = new System.Drawing.Point(12, 121);
             this.btnAccueil.Name = "btnAccueil";
             this.btnAccueil.Size = new System.Drawing.Size(168, 47);
             this.btnAccueil.TabIndex = 2;
             this.btnAccueil.Text = "Accueil";
-            this.btnAccueil.UseVisualStyleBackColor = true;
+            this.btnAccueil.UseVisualStyleBackColor = false;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
             // btnResa
@@ -125,6 +127,7 @@ namespace projetSicilyLines
             this.btnVal.TabIndex = 8;
             this.btnVal.Text = "Valider";
             this.btnVal.UseVisualStyleBackColor = true;
+            this.btnVal.Click += new System.EventHandler(this.btnVal_Click);
             // 
             // lbl
             // 
@@ -154,10 +157,10 @@ namespace projetSicilyLines
             // 
             // tb
             // 
-            this.tb.Location = new System.Drawing.Point(231, 81);
+            this.tb.Location = new System.Drawing.Point(231, 92);
             this.tb.Multiline = true;
             this.tb.Name = "tb";
-            this.tb.Size = new System.Drawing.Size(488, 456);
+            this.tb.Size = new System.Drawing.Size(488, 445);
             this.tb.TabIndex = 11;
             // 
             // Form1

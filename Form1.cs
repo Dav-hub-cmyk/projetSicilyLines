@@ -94,5 +94,19 @@ namespace projetSicilyLines
                 System.Console.WriteLine(text);
             } 
         }
+
+        private void btnVal_Click(object sender, EventArgs e)
+        {
+            if (lbl.Text == "Insertion")
+            {
+                //
+                //tu met le code pour inserer ici je crois Yvan
+            }
+            if (lbl.Text == "Modification")
+            {
+                //
+                //et le code pour la modificatiokn ici aussii
+            }
+        }
     }
 }
