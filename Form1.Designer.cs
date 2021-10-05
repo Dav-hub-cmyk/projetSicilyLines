@@ -40,6 +40,7 @@ namespace projetSicilyLines
             this.tbSaisie = new System.Windows.Forms.TextBox();
             this.btnVal = new System.Windows.Forms.Button();
             this.lbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb
@@ -145,6 +146,15 @@ namespace projetSicilyLines
             this.lbl.TabIndex = 9;
             this.lbl.Text = "Modification";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(784, 514);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
@@ -152,6 +162,7 @@ namespace projetSicilyLines
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1221, 634);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.btnVal);
             this.Controls.Add(this.tbSaisie);
@@ -184,6 +195,7 @@ namespace projetSicilyLines
         private System.Windows.Forms.TextBox tbSaisie;
         private System.Windows.Forms.Button btnVal;
         private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Button button1;
     }
 }
 
