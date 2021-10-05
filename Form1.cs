@@ -49,6 +49,7 @@ namespace projetSicilyLines
             btnModif.Hide();
             lbl.Hide();
             tbSaisie.Hide();
+            btnselect.Hide();
 
             
         }
@@ -80,13 +81,17 @@ namespace projetSicilyLines
 
         private void btnselect_Click(object sender, EventArgs e)
         {
-            DialogResult dr = this.ofd.ShowDialog();
+            ofd.ShowDialog();
+            StreamReader sr = new StreamReader(ofd.FileName);
+            lb.Text = sr.ReadToEnd();
+            /*DialogResult dr = this.ofd.ShowDialog();
             if(dr == DialogResult.OK)
             {
                 string path = this.ofd.FileName;
 
                 string text = File.ReadAllText(path);
                 this.lb.Text = text;
+                System.Console.WriteLine(this.lb.Text);*/
             } 
         }
     }

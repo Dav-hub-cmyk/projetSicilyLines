@@ -161,6 +161,7 @@ namespace projetSicilyLines
             // ofd
             // 
             this.ofd.FileName = "openFileDialog1";
+            this.ofd.Filter = "|*txt";
             this.ofd.Title = "ouvrir un fichier";
             // 
             // Form1
