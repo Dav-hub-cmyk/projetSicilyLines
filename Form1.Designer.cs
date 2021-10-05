@@ -40,12 +40,13 @@ namespace projetSicilyLines
             this.tbSaisie = new System.Windows.Forms.TextBox();
             this.btnVal = new System.Windows.Forms.Button();
             this.lbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnselect = new System.Windows.Forms.Button();
+            this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // lb
             // 
-            this.lb.BackColor = System.Drawing.SystemColors.Window;
+            this.lb.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lb.ForeColor = System.Drawing.SystemColors.Window;
             this.lb.FormattingEnabled = true;
             this.lb.ItemHeight = 20;
@@ -80,19 +81,20 @@ namespace projetSicilyLines
             // 
             // btnResa
             // 
+            this.btnResa.BackColor = System.Drawing.Color.Transparent;
             this.btnResa.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResa.Location = new System.Drawing.Point(12, 232);
             this.btnResa.Name = "btnResa";
             this.btnResa.Size = new System.Drawing.Size(168, 52);
             this.btnResa.TabIndex = 3;
             this.btnResa.Text = "Reservation";
-            this.btnResa.UseVisualStyleBackColor = true;
+            this.btnResa.UseVisualStyleBackColor = false;
             this.btnResa.Click += new System.EventHandler(this.btnResa_Click);
             // 
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(231, 560);
+            this.btnInsert.Location = new System.Drawing.Point(231, 598);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(139, 36);
             this.btnInsert.TabIndex = 4;
@@ -102,7 +104,7 @@ namespace projetSicilyLines
             // 
             // btnModif
             // 
-            this.btnModif.Location = new System.Drawing.Point(419, 560);
+            this.btnModif.Location = new System.Drawing.Point(417, 598);
             this.btnModif.Name = "btnModif";
             this.btnModif.Size = new System.Drawing.Size(131, 36);
             this.btnModif.TabIndex = 5;
@@ -112,7 +114,7 @@ namespace projetSicilyLines
             // 
             // btnSup
             // 
-            this.btnSup.Location = new System.Drawing.Point(591, 560);
+            this.btnSup.Location = new System.Drawing.Point(591, 597);
             this.btnSup.Name = "btnSup";
             this.btnSup.Size = new System.Drawing.Size(139, 37);
             this.btnSup.TabIndex = 6;
@@ -146,14 +148,21 @@ namespace projetSicilyLines
             this.lbl.TabIndex = 9;
             this.lbl.Text = "Modification";
             // 
-            // button1
+            // btnselect
             // 
-            this.button1.Location = new System.Drawing.Point(784, 514);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnselect.Location = new System.Drawing.Point(752, 502);
+            this.btnselect.Name = "btnselect";
+            this.btnselect.Size = new System.Drawing.Size(129, 35);
+            this.btnselect.TabIndex = 10;
+            this.btnselect.Text = "Selectionner";
+            this.btnselect.UseVisualStyleBackColor = true;
+            this.btnselect.Click += new System.EventHandler(this.btnselect_Click);
+            // 
+            // ofd
+            // 
+            this.ofd.FileName = "openFileDialog1";
+            this.ofd.Filter = "|*txt";
+            this.ofd.Title = "ouvrir un fichier";
             // 
             // Form1
             // 
@@ -161,8 +170,8 @@ namespace projetSicilyLines
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1221, 634);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1221, 663);
+            this.Controls.Add(this.btnselect);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.btnVal);
             this.Controls.Add(this.tbSaisie);
@@ -195,7 +204,8 @@ namespace projetSicilyLines
         private System.Windows.Forms.TextBox tbSaisie;
         private System.Windows.Forms.Button btnVal;
         private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnselect;
+        private System.Windows.Forms.OpenFileDialog ofd;
     }
 }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,7 @@ namespace projetSicilyLines
             btnModif.Hide();
             btnInsert.Hide();
             btnSup.Hide();
+            btnselect.Hide();
         }
 
         private void btnResa_Click(object sender, EventArgs e)
@@ -35,6 +37,7 @@ namespace projetSicilyLines
             btnSup.Visible = true;
             btnInsert.Visible = true;
             btnModif.Visible = true;
+            btnselect.Visible = true;
         }
 
         private void btnAccueil_Click(object sender, EventArgs e)
@@ -73,6 +76,18 @@ namespace projetSicilyLines
             lbl.Visible = true;
             lbl.Text = "Modification";
 
+        }
+
+        private void btnselect_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = this.ofd.ShowDialog();
+            if(dr == DialogResult.OK)
+            {
+                string path = this.ofd.FileName;
+
+                string text = File.ReadAllText(path);
+                this.lb.Text = text;
+            } 
         }
     }
 }
