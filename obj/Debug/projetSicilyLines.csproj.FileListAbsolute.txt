@@ -1,0 +1,11 @@
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\bin\Debug\projetSicilyLines.exe.config
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\bin\Debug\projetSicilyLines.exe
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\bin\Debug\projetSicilyLines.pdb
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\obj\Debug\projetSicilyLines.csproj.AssemblyReference.cache
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\obj\Debug\projetSicilyLines.Form1.resources
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\obj\Debug\projetSicilyLines.Properties.Resources.resources
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\obj\Debug\projetSicilyLines.csproj.GenerateResource.cache
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\obj\Debug\projetSicilyLines.csproj.CoreCompileInputs.cache
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\obj\Debug\projetSicilyLines.exe
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\obj\Debug\projetSicilyLines.pdb
+D:\Hamidou\TP C#\SicilyLines\projetSicilyLines-Graphique\projetSicilyLines\obj\Debug\projetSicilyLines.insertion.resources
