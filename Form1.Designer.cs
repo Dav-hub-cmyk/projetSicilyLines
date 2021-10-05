@@ -30,7 +30,6 @@ namespace projetSicilyLines
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.lb = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAccueil = new System.Windows.Forms.Button();
             this.btnResa = new System.Windows.Forms.Button();
@@ -42,19 +41,8 @@ namespace projetSicilyLines
             this.lbl = new System.Windows.Forms.Label();
             this.btnselect = new System.Windows.Forms.Button();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.tb = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // lb
-            // 
-            this.lb.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lb.ForeColor = System.Drawing.SystemColors.Window;
-            this.lb.FormattingEnabled = true;
-            this.lb.ItemHeight = 20;
-            this.lb.Location = new System.Drawing.Point(231, 93);
-            this.lb.Margin = new System.Windows.Forms.Padding(4);
-            this.lb.Name = "lb";
-            this.lb.Size = new System.Drawing.Size(499, 444);
-            this.lb.TabIndex = 0;
             // 
             // label1
             // 
@@ -164,6 +152,14 @@ namespace projetSicilyLines
             this.ofd.Filter = "|*txt";
             this.ofd.Title = "ouvrir un fichier";
             // 
+            // tb
+            // 
+            this.tb.Location = new System.Drawing.Point(231, 81);
+            this.tb.Multiline = true;
+            this.tb.Name = "tb";
+            this.tb.Size = new System.Drawing.Size(488, 456);
+            this.tb.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
@@ -171,6 +167,7 @@ namespace projetSicilyLines
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1221, 663);
+            this.Controls.Add(this.tb);
             this.Controls.Add(this.btnselect);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.btnVal);
@@ -181,7 +178,6 @@ namespace projetSicilyLines
             this.Controls.Add(this.btnResa);
             this.Controls.Add(this.btnAccueil);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lb);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
@@ -193,8 +189,6 @@ namespace projetSicilyLines
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAccueil;
         private System.Windows.Forms.Button btnResa;
@@ -206,6 +200,7 @@ namespace projetSicilyLines
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Button btnselect;
         private System.Windows.Forms.OpenFileDialog ofd;
+        private System.Windows.Forms.TextBox tb;
     }
 }
 

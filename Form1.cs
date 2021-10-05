@@ -20,7 +20,7 @@ namespace projetSicilyLines
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lb.Hide();
+            tb.Hide();
             tbSaisie.Hide();
             btnVal.Hide();
             lbl.Hide();
@@ -32,7 +32,7 @@ namespace projetSicilyLines
 
         private void btnResa_Click(object sender, EventArgs e)
         {
-            lb.Visible = true;
+            tb.Visible = true;
             //btnVal.Visible = true;
             btnSup.Visible = true;
             btnInsert.Visible = true;
@@ -42,7 +42,7 @@ namespace projetSicilyLines
 
         private void btnAccueil_Click(object sender, EventArgs e)
         {
-            lb.Hide();
+            tb.Hide();
             btnVal.Hide();
             btnSup.Hide();
             btnInsert.Hide();
@@ -90,8 +90,8 @@ namespace projetSicilyLines
                 string path = this.ofd.FileName;
 
                 string text = File.ReadAllText(path);
-                this.lb.Text = text;
-                System.Console.WriteLine(this.lb.Text);
+                this.tb.Text = text;
+                System.Console.WriteLine(text);
             } 
         }
     }
