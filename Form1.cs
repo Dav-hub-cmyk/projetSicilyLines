@@ -28,6 +28,7 @@ namespace projetSicilyLines
             btnInsert.Hide();
             btnSup.Hide();
             btnselect.Hide();
+            lbl2.Visible = true;
         }
 
         private void btnResa_Click(object sender, EventArgs e)
@@ -38,6 +39,7 @@ namespace projetSicilyLines
             btnInsert.Visible = true;
             btnModif.Visible = true;
             btnselect.Visible = true;
+            lbl2.Hide();
         }
 
         private void btnAccueil_Click(object sender, EventArgs e)
@@ -50,6 +52,8 @@ namespace projetSicilyLines
             lbl.Hide();
             tbSaisie.Hide();
             btnselect.Hide();
+            lbl2.Visible = true;
+
 
             
         }

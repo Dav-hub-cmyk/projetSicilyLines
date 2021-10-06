@@ -42,6 +42,7 @@ namespace projetSicilyLines
             this.btnselect = new System.Windows.Forms.Button();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.tb = new System.Windows.Forms.TextBox();
+            this.lbl2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -163,6 +164,18 @@ namespace projetSicilyLines
             this.tb.Size = new System.Drawing.Size(488, 445);
             this.tb.TabIndex = 11;
             // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.White;
+            this.lbl2.Font = new System.Drawing.Font("MS Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbl2.Location = new System.Drawing.Point(198, 356);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(893, 60);
+            this.lbl2.TabIndex = 12;
+            this.lbl2.Text = "Bienvenue sur notre site web";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
@@ -170,6 +183,7 @@ namespace projetSicilyLines
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1221, 663);
+            this.Controls.Add(this.lbl2);
             this.Controls.Add(this.tb);
             this.Controls.Add(this.btnselect);
             this.Controls.Add(this.lbl);
@@ -204,6 +218,7 @@ namespace projetSicilyLines
         private System.Windows.Forms.Button btnselect;
         private System.Windows.Forms.OpenFileDialog ofd;
         private System.Windows.Forms.TextBox tb;
+        private System.Windows.Forms.Label lbl2;
     }
 }
 
